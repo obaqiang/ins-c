@@ -1,0 +1,39 @@
+.ver-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 72px;
+  height: 100%;
+  border-right: 1px solid #F1F2F5;
+}
+
+.ver-bl {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+
+.ver-bl-on {
+  background-color: #0057F0;
+  color: #ffffff;
+  position: relative;
+}
+
+.ver-bl-on::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 26px;
+  width: 0px;
+  /*设置宽高为0，所以div的内容为空，从才能形成三角形尖角*/
+  height: 0px;
+  border-right: 7px solid #fff;
+  border-top: 7px solid transparent;
+  /*transparent 表示透明*/
+  border-bottom: 7px solid transparent;
+
+}
